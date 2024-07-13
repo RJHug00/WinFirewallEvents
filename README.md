@@ -29,36 +29,36 @@ UDP   O   51895 chrome(11720)
 
 Blocked Inbound Connections:
 
-Proto Src             Dst             DPort Filter                                   AppPID
------ ---             ---             ----- ------                                   ------
-UDP   LAN.212         Broadcast       17500 Port Scanning Prevention Filter          -(0)
-UDP   LAN.212         LAN.255         17500 Port Scanning Prevention Filter          -(0)
-UDP   LAN.151         224.0.0.251     mDNS  Query User                               svchost -k networkservice -p -s dnscache(2968)
+Proto Src        Dst            DPort Filter                             AppPID
+----- ---        ---            ----- ------                             ------
+UDP   LAN.212    Broadcast      17500 Port Scanning Prevention Filter    -(0)
+UDP   LAN.212    LAN.255        17500 Port Scanning Prevention Filter    -(0)
+UDP   LAN.151    224.0.0.251    mDNS  Query User                         svchost -k networkservice -p -s dnscache(2968)
 
 Blocked Outbounds:
 
-Proto Dst             DPort Filter                                   AppPID
------ ---             ----- ------                                   ------
-TCP   199.232.210.172 HTTP  Default Outbound                         svchost -k netsvcs -p -s bits(13944)
-TCP   199.232.214.172 HTTP  Default Outbound                         svchost -k netsvcs -p -s bits(13944)
-TCP   157.240.241.1   HTTPS !_FB                                     chrome(11720)
-UDP   157.240.241.17  HTTPS !_FB                                     chrome(11720)
-TCP   157.240.241.17  HTTPS !_FB                                     chrome(11720)
-TCP   142.250.80.97   HTTPS !_Google                                 chrome(11720)
-TCP   157.240.241.17  HTTPS !_FB                                     chrome(11720)
+Proto Dst             DPort Filter              AppPID
+----- ---             ----- ------              ------
+TCP   199.232.210.172 HTTP  Default Outbound    svchost -k netsvcs -p -s bits(13944)
+TCP   199.232.214.172 HTTP  Default Outbound    svchost -k netsvcs -p -s bits(13944)
+TCP   157.240.241.1   HTTPS !_FB                chrome(11720)
+UDP   157.240.241.17  HTTPS !_FB                chrome(11720)
+TCP   157.240.241.17  HTTPS !_FB                chrome(11720)
+TCP   142.250.80.97   HTTPS !_Google            chrome(11720)
+TCP   157.240.241.17  HTTPS !_FB                chrome(11720)
 
 Allowed Inbound Connections:
 
 Allowed Outbound Connections:
 
-Proto Src             Dst             DstNm                          DPort Filter                                   AppPID
------ ---             ---             -----                          ----- ------                                   ------
-TCP   me              52.149.246.39   MSFT(Microsoft Corporation)    HTTPS @_Chromium                               chrome(11720)
-TCP   me              18.238.49.116   AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium                               chrome(11720)
-TCP   me              13.225.63.24    AMAZO-CF(Amazon.com, Inc.)     HTTPS @_Chromium                               chrome(11720)
-TCP   me              54.91.155.43    AMAZON-IAD(Amazon Data Servic… HTTPS @_Chromium                               chrome(11720)
-TCP   me              54.91.155.43    AMAZON-IAD(Amazon Data Servic… HTTPS @_Chromium                               chrome(11720)
-TCP   me              18.164.93.227   AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium                               chrome(11720)
-TCP   me              18.238.79.86    AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium                               chrome(11720)
-TCP   me              18.238.50.148   AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium                               chrome(11720)
+Proto Src  Dst             DstNm                          DPort Filter         AppPID
+----- ---  ---             -----                          ----- ------         ------
+TCP   me   52.149.246.39   MSFT(Microsoft Corporation)    HTTPS @_Chromium     chrome(11720)
+TCP   me   18.238.49.116   AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium     chrome(11720)
+TCP   me   13.225.63.24    AMAZO-CF(Amazon.com, Inc.)     HTTPS @_Chromium     chrome(11720)
+TCP   me   54.91.155.43    AMAZON-IAD(Amazon Data Servic… HTTPS @_Chromium     chrome(11720)
+TCP   me   54.91.155.43    AMAZON-IAD(Amazon Data Servic… HTTPS @_Chromium     chrome(11720)
+TCP   me   18.164.93.227   AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium     chrome(11720)
+TCP   me   18.238.79.86    AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium     chrome(11720)
+TCP   me   18.238.50.148   AMAZON-CF(Amazon.com, Inc.)    HTTPS @_Chromium     chrome(11720)
 ```
