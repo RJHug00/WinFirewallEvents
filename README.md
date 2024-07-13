@@ -3,7 +3,7 @@ Powershell script to enable then reduce and display firewall ALLOW and BLOCK eve
 
 Many people, including myself, want insight into how the Windows Firewall rules are affecting the software on their machines. Numerous bits of wisdom can be found online, but few coherent applications glue the constituent technologies together. This script relies on Powershell 7, but no additional external libraries/toolkits.
 
-In the first phase, auditing is turned on to cause the Windows Filtering Platform (Wfp) to begin capturing relevant network traffic events, and the user is prompted to indicate when processing being scrutinized has completed.
+In the first phase, auditing is turned on to cause the Windows Filtering Platform (WFP) to begin capturing relevant network traffic events, and the user is prompted to indicate when processing being scrutinized has completed.
 
 Once the use directs the logic to proceed, auditing is turned back off to prevent excessive logging and/or the log wrapping around and overwriting the initial events and the analyze and report phase begins. The current state of the rules in-use by the WFP are captured to facilitate linking the captured events to the associated firewall rule. The main script processing is piping the content of the Windows Security log events through a set of functions to reduce and summarize the capture period.  Tables, stripped of duplicates and 'noise' are output as shown below.  Note that Allowed Outbounds are adorned with the company associated with the IP address recorded in the event (the DNS lookup hostname is unlikely ever to be available to us). For the author's purposes, I want to know what functionality on my system is trying to contact, obviously with privacy concerns in-mind.
 
