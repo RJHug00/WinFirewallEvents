@@ -1,7 +1,9 @@
 # WinFirewallEvents
-Powershell script to enable then reduce and display firewall ALLOW and BLOCK events auditing.
+Powershell script to enable then reduce and display firewall ALLOW and BLOCK events auditing.  Goes quite a way towards answering the question "what firewall rule is blocking my traffic?"
 
-Many people, including myself, want insight into how the Windows Firewall rules are affecting the software on their machines. Numerous bits of wisdom can be found online, but few coherent applications glue the constituent technologies together. This script relies on Powershell 7, but no additional external libraries/toolkits.
+Many people, including myself, want insight into how the Windows Firewall rules are affecting the software on their machines. Numerous bits of wisdom can be found online, but few coherent applications glue the constituent technologies together. In fact, some of the bits of wisdom suggest inferior approaches such as using netsh to generate the pfirewall.log file. 
+
+This script relies on Powershell 7, but no additional external libraries/toolkits.  It is accompanied by an XML file to control the format of the output.  Both files are 100% human-readable prior to use.
 
 In the first phase, auditing is turned on to cause the Windows Filtering Platform (WFP) to begin capturing relevant network traffic events, and the user is prompted to indicate when processing being scrutinized has completed.
 
