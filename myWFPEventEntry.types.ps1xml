@@ -12,21 +12,21 @@
     <TableColumnHeader><Width>5</Width></TableColumnHeader>
     <TableColumnHeader><Width>3</Width></TableColumnHeader> <!-- always 'me' ? -->
     <TableColumnHeader><Width>15</Width></TableColumnHeader>
-    <TableColumnHeader><Width>30</Width></TableColumnHeader>
     <TableColumnHeader><Width>5</Width></TableColumnHeader>
-    <TableColumnHeader><Width>40</Width></TableColumnHeader>
-    <TableColumnHeader><Width>50</Width></TableColumnHeader>
+    <TableColumnHeader><Width>16</Width></TableColumnHeader>
+    <TableColumnHeader><Width>16</Width></TableColumnHeader>
+    <TableColumnHeader><Width>120</Width></TableColumnHeader>
    </TableHeaders>
    <TableRowEntries>
-    <TableRowEntry><Wrap/>
+    <TableRowEntry>    <Wrap/>
      <TableColumnItems>
       <TableColumnItem><PropertyName>Proto</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>Src</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>Dst</PropertyName></TableColumnItem>
-      <TableColumnItem><PropertyName>DstNm</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>DPort</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>Filter</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>AppPID</PropertyName></TableColumnItem>
+      <TableColumnItem><PropertyName>DstNm</PropertyName></TableColumnItem>
      </TableColumnItems>
     </TableRowEntry>
    </TableRowEntries>
@@ -41,7 +41,7 @@
     <TableColumnHeader><Width>15</Width></TableColumnHeader>
     <TableColumnHeader><Width>5</Width></TableColumnHeader>
     <TableColumnHeader><Width>40</Width></TableColumnHeader>
-    <TableColumnHeader><Width>50</Width></TableColumnHeader>
+    <TableColumnHeader><Width>40</Width></TableColumnHeader>
    </TableHeaders>
    <TableRowEntries>
     <TableRowEntry>
@@ -65,7 +65,7 @@
     <TableColumnHeader><Width>15</Width></TableColumnHeader>
     <TableColumnHeader><Width>5</Width></TableColumnHeader>
     <TableColumnHeader><Width>40</Width></TableColumnHeader>
-    <TableColumnHeader><Width>50</Width></TableColumnHeader>
+    <TableColumnHeader><Width>40</Width></TableColumnHeader>
    </TableHeaders>
    <TableRowEntries>
     <TableRowEntry>
@@ -89,7 +89,7 @@
     <TableColumnHeader><Width>15</Width></TableColumnHeader>
     <TableColumnHeader><Width>5</Width></TableColumnHeader>
     <TableColumnHeader><Width>40</Width></TableColumnHeader>
-    <TableColumnHeader><Width>50</Width></TableColumnHeader>
+    <TableColumnHeader><Width>40</Width></TableColumnHeader>
    </TableHeaders>
    <TableRowEntries>
     <TableRowEntry>
@@ -112,7 +112,7 @@
     <TableColumnHeader><Width>5</Width></TableColumnHeader>
     <TableColumnHeader><Width>3</Width></TableColumnHeader>
     <TableColumnHeader><Width>5</Width></TableColumnHeader>
-    <TableColumnHeader><Width>50</Width></TableColumnHeader>
+    <TableColumnHeader><Width>40</Width></TableColumnHeader>
    </TableHeaders>
    <TableRowEntries>
     <TableRowEntry>
@@ -120,6 +120,31 @@
       <TableColumnItem><PropertyName>Proto</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>Dir</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>SPort</PropertyName></TableColumnItem>
+      <TableColumnItem><PropertyName>AppPID</PropertyName></TableColumnItem>
+     </TableColumnItems>
+    </TableRowEntry>
+   </TableRowEntries>
+  </TableControl>
+  <ViewSelectedBy><TypeName>myWFPEventEntry</TypeName></ViewSelectedBy>
+ </View>
+ <View><Name>RuleView</Name>
+  <TableControl>
+   <TableHeaders>
+    <TableColumnHeader><Width>2</Width></TableColumnHeader>
+    <TableColumnHeader><Width>5</Width></TableColumnHeader>
+    <TableColumnHeader><Width>3</Width></TableColumnHeader>
+    <TableColumnHeader><Width>5</Width></TableColumnHeader>
+    <TableColumnHeader><Width>5</Width></TableColumnHeader>
+    <TableColumnHeader><Width>40</Width></TableColumnHeader>
+   </TableHeaders>
+   <TableRowEntries>
+    <TableRowEntry>
+     <TableColumnItems>
+      <TableColumnItem><PropertyName>Op</PropertyName></TableColumnItem>
+      <TableColumnItem><PropertyName>Proto</PropertyName></TableColumnItem>
+      <TableColumnItem><PropertyName>Dir</PropertyName></TableColumnItem>
+      <TableColumnItem><PropertyName>SPort</PropertyName></TableColumnItem>
+      <TableColumnItem><PropertyName>DPort</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>AppPID</PropertyName></TableColumnItem>
      </TableColumnItems>
     </TableRowEntry>
@@ -140,12 +165,12 @@
     <TableColumnHeader><Width>Proto=5</Width></TableColumnHeader>
     <TableColumnHeader><Width>SPort=5</Width></TableColumnHeader>
     <TableColumnHeader><Width>DPort=5</Width></TableColumnHeader>
-    <TableColumnHeader><Width>DstNm=30</Width></TableColumnHeader>
     <TableColumnHeader><Width>Filter=40</Width></TableColumnHeader>
-    <TableColumnHeader><Width>AppPID=50</Width></TableColumnHeader>
+    <TableColumnHeader><Width>AppPID=40</Width></TableColumnHeader>
     <TableColumnHeader><Width>Folder=50</Width></TableColumnHeader>
                        <Label>?</Label>
                        <Alignment>Left Right Center</Alignment>
+    <TableColumnHeader><Width>DstNm=80</Width></TableColumnHeader>
    </TableHeaders>
    <TableRowEntries>
     <TableRowEntry>
@@ -156,7 +181,6 @@
       <TableColumnItem><PropertyName>Src</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>Dst</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>PID</PropertyName></TableColumnItem>
-      <TableColumnItem><PropertyName>DstNm</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>Proto</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>SPort</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>DPort</PropertyName></TableColumnItem>
@@ -164,6 +188,7 @@
       <TableColumnItem><PropertyName>AppPID</PropertyName></TableColumnItem>
       <TableColumnItem><PropertyName>Folder</PropertyName></TableColumnItem>
                        <Alignment>Left Right Center</Alignment>
+      <TableColumnItem><PropertyName>DstNm</PropertyName></TableColumnItem>
      </TableColumnItems>
     </TableRowEntry>
    </TableRowEntries>
